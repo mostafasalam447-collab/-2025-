@@ -257,3 +257,70 @@
   <div class="signature-ar">مصطفى سلام</div>
   <div class="signature-en">𝑴𝒐𝒔𝒕𝒂𝒇𝒂 𝑺𝒂𝒍𝒍𝒂𝒎</div>
 </div>
+
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  .signature-container {
+    display: inline-block; /* لجعل المستطيل يلتف حول المحتوى */
+    border: 1px solid #BF953F; /* إطار ذهبي للمستطيل */
+    padding: 8px 15px; /* مسافة داخلية للمستطيل */
+    background-color: #fcfcfc; /* خلفية بيضاء خفيفة داخل المستطيل */
+    border-radius: 5px; /* حواف مستديرة للمستطيل */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل خفيف للمستطيل */
+    text-align: center;
+    line-height: 1.4; /* مسافة مناسبة بين السطور */
+    transform: rotate(-1deg); /* إمالة بسيطة لتعطي لمسة شخصية */
+    transition: all 0.3s ease;
+  }
+
+  .signature-container:hover {
+    transform: rotate(0deg) scale(1.02); /* تأثير عند مرور الماوس */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .signature-arabic {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 24px; /* حجم صغير مناسب كتوقيع */
+    font-weight: 700;
+    
+    /* تدرج اللون الذهبي */
+    background: linear-gradient(
+      to right, 
+      #BF953F, 
+      #FCF6BA, 
+      #B38728, 
+      #FBF5B7, 
+      #AA771C
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0.5px 0.5px 1px rgba(0,0,0,0.1)); /* ظل خفيف جداً */
+  }
+
+  .signature-english {
+    font-family: 'Playfair Display', serif; /* خط أنيق للإنجليزي */
+    font-size: 16px; /* حجم أصغر للإنجليزي */
+    font-weight: 700;
+    margin-top: 2px; /* مسافة بين العربي والإنجليزي */
+    display: block; /* ليظهر في سطر جديد */
+
+    /* تدرج اللون الذهبي */
+    background: linear-gradient(
+      to right, 
+      #BF953F, 
+      #FCF6BA, 
+      #B38728, 
+      #FBF5B7, 
+      #AA771C
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0.5px 0.5px 1px rgba(0,0,0,0.1)); /* ظل خفيف جداً */
+  }
+</style>
+
+<div class="signature-container">
+  <span class="signature-arabic">مصطفى سلام</span>
+  <span class="signature-english">𝑴𝑶𝑺𝑻𝑨𝑭𝑨 𝑺𝑨𝑳𝑳𝑨𝑴</span>
+</div>
