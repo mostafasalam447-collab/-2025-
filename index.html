@@ -99,3 +99,42 @@
 <div class="signature-container">
   <div class="signature">مصطفى سلام</div>
 </div>
+<link href="https://fonts.googleapis.com/css2?family=Vibes&family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  .signature-box {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .handwritten-sig {
+    /* دمج الخط العربي مع لمسة انسيابية */
+    font-family: 'Vibes', 'Reem Kufi', cursive;
+    font-size: 60px;
+    display: inline-block;
+    
+    /* إمالة بسيطة ليعطي شكل التوقيع اليدوي */
+    transform: rotate(-5deg) skew(-10deg);
+    
+    /* تدرج ذهبي ملكي */
+    background: linear-gradient(135deg, #d4af37 0%, #fcf6ba 45%, #b8860b 70%, #fbf5b7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* تأثير العمق (Shadow) لجعل الخط بارز */
+    filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.15));
+    
+    letter-spacing: -2px; /* تقريب الحروف ليشبه الشخبطة */
+    transition: all 0.3s ease;
+  }
+
+  /* تأثير عند مرور الماوس (اختياري) */
+  .handwritten-sig:hover {
+    transform: rotate(0deg) scale(1.05);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  }
+</style>
+
+<div class="signature-box">
+  <div class="handwritten-sig">مصطفى سلام</div>
+</div>
