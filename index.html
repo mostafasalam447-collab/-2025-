@@ -138,3 +138,56 @@
 <div class="signature-box">
   <div class="handwritten-sig">مصطفى سلام</div>
 </div>
+<div class="signature-wrapper">
+  <svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#BF953F;stop-opacity:1" />
+        <stop offset="25%" style="stop-color:#FCF6BA;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#B38728;stop-opacity:1" />
+        <stop offset="75%" style="stop-color:#FBF5B7;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#AA771C;stop-opacity:1" />
+      </linearGradient>
+      
+      <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+      </filter>
+    </defs>
+
+    <g fill="none" stroke="url(#goldGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#softShadow)" style="transform: rotate(-2deg); transform-origin: center;">
+      <path d="M50,100 Q80,40 110,90 T170,80 Q190,110 150,120 Q120,125 100,100" />
+      <path d="M160,70 C180,30 220,50 200,90 S150,130 210,115" />
+      <path d="M240,110 Q260,60 280,100 T320,90 Q350,80 380,120" />
+      <path d="M270,75 L290,55" /> <path d="M40,130 Q150,110 360,135" stroke-width="2" opacity="0.7"/>
+    </g>
+    
+    <text x="50%" y="90%" font-family="Arial" font-size="10" fill="transparent">مصطفى سلام</text>
+  </svg>
+</div>
+
+<style>
+  .signature-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: transparent;
+    transition: transform 0.4s ease;
+  }
+
+  .signature-wrapper:hover {
+    transform: scale(1.05); /* حركة تفاعلية عند المرور بالماوس */
+  }
+
+  /* أنيميشن يظهر التوقيع كأنه يُرسم الآن */
+  svg path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s forwards ease-in-out;
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
