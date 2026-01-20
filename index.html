@@ -60,3 +60,42 @@
 
 </body>
 </html>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  .signature-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent; /* أو اختر خلفية تناسب موقعك */
+  }
+
+  .signature {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 48px; /* يمكنك تكبير أو تصغير الحجم من هنا */
+    display: inline-block;
+    
+    /* تأثير اللون الذهبي */
+    background: linear-gradient(
+      to bottom, 
+      #BF953F, 
+      #FCF6BA, 
+      #B38728, 
+      #FBF5B7, 
+      #AA771C
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* ظل خفيف لإبراز التوقيع */
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    
+    /* ميزة لجعل الخط يبدو كأنه مكتوب بريشة */
+    font-style: italic;
+    cursor: default;
+    user-select: none;
+  }
+</style>
+
+<div class="signature-container">
+  <div class="signature">مصطفى سلام</div>
+</div>
