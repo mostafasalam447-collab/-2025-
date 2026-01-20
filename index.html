@@ -191,3 +191,69 @@
     }
   }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+  .elegant-signature-container {
+    text-align: center;
+    padding: 30px;
+    background: transparent; /* يمكنك تعديل الخلفية حسب موقعك */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* المسافة بين التوقيعين */
+  }
+
+  .signature-ar, .signature-en {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+    
+    /* تأثير اللون الذهبي الفاخر */
+    background: linear-gradient(
+      145deg, 
+      #d4af37 0%,   /* ذهبي فاتح */
+      #fcf6ba 35%,  /* ذهبي لامع جداً */
+      #b8860b 70%,  /* ذهبي غامق */
+      #fbf5b7 100%  /* ذهبي متوسط */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* ظل خفيف مع لمسة داخلية */
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2)) contrast(1.1);
+    
+    transition: all 0.3s ease;
+    cursor: default;
+    user-select: none;
+  }
+
+  .signature-ar {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 58px; /* حجم كبير للرقعة */
+    letter-spacing: 1px;
+    transform: rotate(-1deg); /* ميلان خفيف لمسة فنية */
+  }
+
+  .signature-en {
+    font-family: 'Playfair Display', serif; /* خط أنيق مائل (Serif) */
+    font-size: 38px;
+    font-style: italic; /* تأكيد المائل */
+    font-weight: 700; /* سمك الخط */
+    letter-spacing: 0.5px;
+    transform: rotate(1deg); /* ميلان معاكس لتوازن التصميم */
+    margin-top: -15px; /* رفع التوقيع الإنجليزي قليلاً ليتداخل */
+  }
+
+  /* تأثير عند مرور الماوس على الحاوية بالكامل */
+  .elegant-signature-container:hover .signature-ar,
+  .elegant-signature-container:hover .signature-en {
+    filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.3)) contrast(1.2) brightness(1.1);
+    transform: scale(1.03) rotate(0deg); /* تكبير بسيط واستقامة */
+  }
+</style>
+
+<div class="elegant-signature-container">
+  <div class="signature-ar">مصطفى سلام</div>
+  <div class="signature-en">𝑴𝒐𝒔𝒕𝒂𝒇𝒂 𝑺𝒂𝒍𝒍𝒂𝒎</div>
+</div>
